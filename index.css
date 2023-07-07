@@ -1,0 +1,57 @@
+   
+body{
+    background-image: url(back1.png);
+
+    background-color: black;
+    margin: 0;
+    font-size: 16px;
+    background-size: cover;
+    font-family: Verdana;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-size: cover; */
+    overflow-y:hidden;
+  }
+  #pictureGroup{
+    display: flex;
+    flex-direction:row;
+    height: 100vh;
+
+    margin: 1rem;
+justify-content: center;
+align-items: center;
+  }
+
+  .picture {
+    display: none;
+  max-width: 90%;
+ max-height: 90%;
+
+  
+   
+   
+  }
+  img{
+    aspect-ratio: 1;
+    border-radius: 3%;
+    border: 2px solid blue;
+    animation: shake 3s 
+    cubic-bezier(0.36,0.07,.019,0.97) both;
+   width:500px;
+
+  }
+
+  @keyframes shake {
+    50% {
+      transform: scale(0) rotateY(180deg);
+ 
+    }
+    
+
+  }
+@media screen  and (max-width:700px){
+    body{
+        background-image: url(back.jpg);
+    }
+}
+ 
